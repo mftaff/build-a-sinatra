@@ -98,4 +98,4 @@ nancy_application.post "/" do
     [200, {}, request.body]
 end
 
-Rack::Handler::WEBrick.run nancy_application, host: 'https://build-a-sinatra-mftaff.c9users.io', Port: 8080
+Rack::Handler::WEBrick.run nancy_application, host: 'https://build-a-sinatra-mftaff.c9users.io', Port: 8080, Host: '0.0.0.0'
